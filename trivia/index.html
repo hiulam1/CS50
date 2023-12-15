@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <title>Trivia!</title>
+  <script src="trivia.js">
+    // TODO: Add code to check answers to questions
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Trivia!</h1>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>Part 1: Multiple Choice </h2>
+      <hr>
+      <h3 id="part1">How many cantons are there in Switzerland?</h3>
+      <button type="button" class="wrong" onclick="change(this)">21</button>
+      <button type="button" class="wrong" onclick="change(this)">23</button>
+      <button type="button" class="wrong" onclick="change(this)">13</button>
+      <button type="button" class="right" onclick="change(this)">26</button>
+      <!-- TODO: Add multiple choice question here -->
+    </div>
+
+    <div class="section">
+      <h2>Part 2: Free Response</h2>
+      <hr>
+      <!-- TODO: Add free response question here -->
+      <h3 id="part2">Does gruyere contain lactose?</h3>
+      <input type="text" id="answer">
+      <button type="submit" onclick="disable(this), checkanswer()">submit</button>
+    </div>
+  </div>
+</body>
+
+</html>

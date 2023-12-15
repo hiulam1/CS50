@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: because it is has the lowest omega
+
+sort2 uses: merge sort
+
+How do you know?: its O is the fastest
+
+sort3 uses: selection sort
+
+How do you know?: when sorting sorted10000.txt, it uses more time than sorted 1

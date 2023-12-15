@@ -1,0 +1,2 @@
+Depending on the span of a user's taste, the aura would be in a range between high and low, since valence, energy and danceability seem to be positively correlated with one another.
+it may not be very representative of the listener as various genres may score similar in overall 'aura score', for instance metal and pop. Perhaps including genre in the calculation would make it more holistic. 

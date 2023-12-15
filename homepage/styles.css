@@ -1,0 +1,162 @@
+
+#title {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 50px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 250px;
+  }
+
+  #title, .categories-text {
+    opacity: 0;
+    transition: transform 2s, opacity 1s;
+    transform: translateY(-70px);
+  }
+
+  #frontpage {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('./assets/simon-zhu-4hluhoRJokI-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #food {
+    background-image: url('./assets/Food.jpg');
+  }
+
+  #drinks {
+    background-image: url('./assets/Bar.jpg');
+  }
+
+  #sights {
+    background-image: url('./assets/rainbow-estate.jpg');
+  }
+  #food, #drinks, #sights {
+    border-color: black;
+    border: none;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #left-arrow {
+    top:50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+
+  #down-arrow {
+    bottom: 20px;
+    left: 50%;                  /* This will move the arrow to the middle */
+    transform: translateX(-50%);
+  }
+
+  #right-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+
+  .arrows {
+    font-size: 160px;
+    position:absolute;
+    color: white;
+    font-weight: 700;
+    opacity: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    transition: background 0.3s;
+  }
+
+  .categories-text {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 50px;
+    color: white;
+    left: 20px;
+    top: 60px;
+    position: relative;
+  }
+
+  .category-link {
+    text-decoration: none;
+    display: inline-block;
+    padding:0;
+  }
+
+  .categories .row .category{
+    height: 100vh;
+    position: relative;
+  }
+
+  .category:hover .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .category:hover .arrows {
+    opacity: 1;
+  }
+
+  .categories-text, .arrows {
+    z-index: 2;
+  }
+
+  .loaded {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  @media (max-width: 768px) {
+    #frontpage {
+      background-position: center;
+    }
+
+    #title {
+      font-size: 60px;
+      text-align: center;
+      left: 0;
+      top: 100px;
+  }
+    .category-link {
+    height: 33.33vh;
+    overflow: hidden;
+  }
+
+    .category-link, .row {
+      display:flex;
+      flex-direction: column;
+    }
+
+  .category {
+    display: flex;
+    flex-shrink: 1;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  .categories-text {
+    font-size: 60px;
+  }
+
+  #food {
+    background-position-y: 75%;
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  }
